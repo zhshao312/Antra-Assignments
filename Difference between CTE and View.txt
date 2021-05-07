@@ -1,0 +1,14 @@
+Zihao Shao
+
+1. For queries that are referenced occasionally (or just once), it’s usually better to use a CTE. 
+If you need the query again, you can just copy the CTE and modify it if necessary.
+
+2.If you tend to reference the same query often, creating a corresponding view is a good idea. 
+However, you’ll need create view permission in your database to create a view.
+
+3. A view might be used to restrict particular users’ database access while still allowing them to get the information they need. You can give users access to specific views that query the data they’re allowed to see without exposing the whole database. 
+In such a case, a view provides an additional access layer.
+
+4.Views can be indexed but CTE can't.
+
+5.CTE work excellent on tree hierarchy. i.e. recursive
