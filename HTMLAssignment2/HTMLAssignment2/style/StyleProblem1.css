@@ -1,0 +1,86 @@
+﻿body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+    font-size: smaller;
+}
+
+h1 {
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+input[type=text], input[type=password], input[type=number], input[type=email] {
+    width: 98%;
+    font-size: 28px;
+    padding: 15px;
+    margin: 5px 10px 22px 5px;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+label {
+    font-size: 15px;
+    display: block;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=number]:focus, input[type=email]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+input[type=checkbox] {
+    padding: 16px;
+    margin: 5px 0 22px 0;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+button {
+    font-size: 18px;
+    font-weight: bold;
+    background-color: forestgreen;
+    color: white;
+    padding: 14px 20px;
+    margin: 5px 10px 22px 5px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+    button:hover {
+        opacity: 1;
+    }
+
+.Register {
+    padding: 14px 20px;
+    background-color: dodgerblue;
+}
+
+.formContainer {
+    padding: 16px;
+}
+
+    .formContainer p {
+        font-size: 28px;
+    }
+
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.terms {
+    align-content: space-around;
+    margin: 0px 0px 0px 20px;
+}

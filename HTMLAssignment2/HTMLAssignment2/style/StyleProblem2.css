@@ -1,0 +1,119 @@
+﻿body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+form {
+    background-color: whitesmoke;
+}
+h1 {
+    text-align: left;
+    color: #03217c;
+}
+
+h7{
+    color:white;
+}
+
+.h2left{
+    color:dimgray;
+    font-size:20px;
+}
+.h2right {
+    color: white;
+    font-size: 20px;
+}
+* {
+    box-sizing: border-box;
+}
+
+input[type=text], input[type=password], input[type=number], input[type=email] {
+    width: 98%;
+    font-size: 20px;
+    padding: 15px;
+    margin: 5px 10px 22px 5px;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+label {
+    font-size: 15px;
+    display: block;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=number]:focus, input[type=email]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+input[type=checkbox] {
+    padding: 16px;
+    margin: 5px 0 22px 0;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+button {
+    font-size: 18px;
+    font-weight: bold;
+    color: #03217c;
+    background-color: whitesmoke;
+    padding: 10px;
+    margin: 5px 10px 22px 5px;
+    border: solid;
+    border-block-color: #03217c;
+    cursor: pointer;
+    width: 40%;
+    opacity: 0.8;
+    margin-right: auto;
+    float: right;
+}
+
+    button:hover {
+        opacity: 1;
+    }
+
+.Login {
+    background-color: #03217c;
+    border-block-color: orange;
+    color: white;
+    width:40%;
+}
+
+.formContainer {
+    padding: 16px;
+}
+
+    .formContainer p {
+        font-size: 15px;
+    }
+
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.terms {
+    align-content: space-around;
+    margin: 0px 0px 0px 20px;
+}
+.column {
+    float: left;
+    width: 50%;
+    padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    clear: both;
+}
+
+.forget{
+    float:right;
+}

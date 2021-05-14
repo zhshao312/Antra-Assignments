@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>fakebook Register FormF</title>
+    <link href="style/StyleProblem5.css" rel="stylesheet" />
+</head>
+<body>
+    <form>
+        <div class="formContainer">
+            <h1>fakebook</h1>
+            <h2>Registration</h2>
+            <h3>It is safe and it will always be!</h3>
+            <div class="row">
+                <div class="column">
+                    <p>None-Important Information</p>
+                    <div class="flex">
+                        <input type="text" placeholder="First Name" name="First Name" class="inputbox" required>
+                        <input type="text" placeholder="Last Name" name="Last Name" class="inputbox" required>
+                    </div>
+                    <div class="flex">
+                        <input type="email" placeholder="Your Email" name="Email" class="inputbox" required>
+                        <input type="text" placeholder="Phone Number" name="phone" class="inputbox" required>
+                    </div>
+                    <div class="flex">
+                        <input type="password" placeholder="Password" name="password" class="inputbox" required>
+                        <input type="text" placeholder="Website" name="website" class="inputbox" required>
+                    </div>
+                    <p style="margin-right:200px; margin-top:0px; font-size:12px">Birthday</p>
+                    <input type="date" name="birthday" class="date" required>
+                    <div class="flex" style="margin-right:200px; margin-top:0px; margin-bottom:70.5px;">
+                        <form action="" id="gender">
+                            <input type="radio" name="gender" value="male"> <p style="font-size:10px">Male </p>
+                            <input type="radio" name="gender" value="female"><p style="font-size:10px"> Female </p>
+                            <input type="radio" name="gender" value="other"> <p style="font-size:10px"> Other </p>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        <p>Important Information *required</p>
+                        <div class="flex">
+                            <select>
+                                <option value="" disabled selected hidden>Country
+                                <option value="USA">USA</option>
+                                <option value="Canada">Canada</option>
+                                <option value="China">China</option>
+                            </select>
+                            <input type="text" placeholder="Village" name="Village" class="inputbox" required>
+                            <input type="text" placeholder="Distrinct" name="Distrinct" class="inputbox" required>
+                        </div>
+                        <div class="flex">
+                            <input type="text" placeholder="Street" id="address" name="Street" class="inputbox">
+                            <input type="text" placeholder="Nr" id="address" name="Nr" class="inputbox">
+                            <input type="text" placeholder="Floor" id="address" name="Floor" class="inputbox">
+                            <input type="text" placeholder="Ap Nr" id="address" name="Ap Nr" class="inputbox">
+                        </div>
+                        <p style="margin-right:180px; margin-top:0px; font-size:12px">Door Color</p>
+                        <div class="flex">
+                            <input type="color" name="color" id="color" value="#FF1493">
+                            <input type="text" placeholder="Water Meter Nr" id="water" name="watermeterNr" class="inputbox">
+                            <select id="select2">
+                                <option value="" disabled selected hidden>Aunt Panties's Size'
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                            </select>
+                        </div>
+                        <p style="margin-right:180px; margin-top:0px; font-size:12px; text-align:left; margin-bottom:0px">More Personal Information</p>
+                        <br>
+                        <textarea rows="4" cols="34" name="comment" form="usrform">Give us more information...</textarea>
+                    </div>
+                </div>
+                <div class="flex">
+                    <button type="reset">Clear Form</button>
+                    <button type="submit">Register</button>
+                </div>
+            </div>
+    </form>
+</body>
+</html>

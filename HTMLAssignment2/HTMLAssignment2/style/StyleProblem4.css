@@ -1,0 +1,14 @@
+﻿.img-with-text {
+    text-align: justify;
+    width: [width of img];
+}
+
+    .img-with-text img {
+        display: block;
+        margin-right: 100px;
+        width: 50%;
+    }
+.flex {
+    display: flex;
+    flex-direction: row;
+}
