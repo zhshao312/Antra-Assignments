@@ -1,0 +1,22 @@
+Value Type vs Reference Type
+
+Value Type:
+A data type is a value type if it holds a data value within its own memory space. 
+It means the variables of these data types directly contain values. 
+
+The following data types are all of value type:
+bool, byte, char, decimal, double, enum, float, int, long, sbyte, short, struct, uint, ulong, ushort
+
+When you pass a value-type variable from one method to another, the system creates a separate copy of a variable in another method. 
+If value got changed in the one method, it wouldn't affect the variable in another method.
+
+Reference Type:
+Unlike value types, a reference type doesn't store its value directly. Instead, it stores the address where the value is being stored.
+In other words, a reference type contains a pointer to another memory location that holds the data.
+
+The followings are reference type data types:
+
+String, Arrays, Class, Delegate
+
+When you pass a reference type variable from one method to another, it doesn't create a new copy; instead, it passes the variable's address. 
+So, If we change the value of a variable in a method, it will also be reflected in the calling method.
