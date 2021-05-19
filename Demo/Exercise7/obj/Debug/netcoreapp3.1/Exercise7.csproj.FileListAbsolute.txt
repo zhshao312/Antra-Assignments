@@ -1,0 +1,13 @@
+C:\Users\zhsha\OneDrive\Documents\antra\Demo\Exercise7\bin\Debug\netcoreapp3.1\Exercise7.exe
+C:\Users\zhsha\OneDrive\Documents\antra\Demo\Exercise7\bin\Debug\netcoreapp3.1\Exercise7.deps.json
+C:\Users\zhsha\OneDrive\Documents\antra\Demo\Exercise7\bin\Debug\netcoreapp3.1\Exercise7.runtimeconfig.json
+C:\Users\zhsha\OneDrive\Documents\antra\Demo\Exercise7\bin\Debug\netcoreapp3.1\Exercise7.runtimeconfig.dev.json
+C:\Users\zhsha\OneDrive\Documents\antra\Demo\Exercise7\bin\Debug\netcoreapp3.1\Exercise7.dll
+C:\Users\zhsha\OneDrive\Documents\antra\Demo\Exercise7\bin\Debug\netcoreapp3.1\Exercise7.pdb
+C:\Users\zhsha\OneDrive\Documents\antra\Demo\Exercise7\obj\Debug\netcoreapp3.1\Exercise7.csprojAssemblyReference.cache
+C:\Users\zhsha\OneDrive\Documents\antra\Demo\Exercise7\obj\Debug\netcoreapp3.1\Exercise7.AssemblyInfoInputs.cache
+C:\Users\zhsha\OneDrive\Documents\antra\Demo\Exercise7\obj\Debug\netcoreapp3.1\Exercise7.AssemblyInfo.cs
+C:\Users\zhsha\OneDrive\Documents\antra\Demo\Exercise7\obj\Debug\netcoreapp3.1\Exercise7.csproj.CoreCompileInputs.cache
+C:\Users\zhsha\OneDrive\Documents\antra\Demo\Exercise7\obj\Debug\netcoreapp3.1\Exercise7.dll
+C:\Users\zhsha\OneDrive\Documents\antra\Demo\Exercise7\obj\Debug\netcoreapp3.1\Exercise7.pdb
+C:\Users\zhsha\OneDrive\Documents\antra\Demo\Exercise7\obj\Debug\netcoreapp3.1\Exercise7.genruntimeconfig.cache
