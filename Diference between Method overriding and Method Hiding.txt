@@ -1,0 +1,12 @@
+Difference between Method overriding and Method Hiding in C#:
+
+Method Overrding: 
+Method Overriding is a technique that allows the invoking of functions from another class (base class) in the derived class. 
+It creates a method in the derived class with the same signature as a method in the base class.
+In Method overriding, when base class reference variable pointing to the object of the derived class, then it will call the overridden method in the derived class.
+
+
+Method hiding:
+You can hide the implementation of the methods of a base class from the derived class using the new keyword. In the other
+words, you can redefine the method of the base class in the derived class by using the new keyword.
+In the method hiding, when base class reference variable pointing to the object of the derived class, then it will call the hidden method in the base class.
