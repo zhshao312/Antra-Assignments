@@ -1,0 +1,13 @@
+C:\Users\zhsha\OneDrive\Documents\antra\notes\assignment\Lab5\Exercise3\bin\Debug\netcoreapp3.1\Exercise3.exe
+C:\Users\zhsha\OneDrive\Documents\antra\notes\assignment\Lab5\Exercise3\bin\Debug\netcoreapp3.1\Exercise3.deps.json
+C:\Users\zhsha\OneDrive\Documents\antra\notes\assignment\Lab5\Exercise3\bin\Debug\netcoreapp3.1\Exercise3.runtimeconfig.json
+C:\Users\zhsha\OneDrive\Documents\antra\notes\assignment\Lab5\Exercise3\bin\Debug\netcoreapp3.1\Exercise3.runtimeconfig.dev.json
+C:\Users\zhsha\OneDrive\Documents\antra\notes\assignment\Lab5\Exercise3\bin\Debug\netcoreapp3.1\Exercise3.dll
+C:\Users\zhsha\OneDrive\Documents\antra\notes\assignment\Lab5\Exercise3\bin\Debug\netcoreapp3.1\Exercise3.pdb
+C:\Users\zhsha\OneDrive\Documents\antra\notes\assignment\Lab5\Exercise3\obj\Debug\netcoreapp3.1\Exercise3.csprojAssemblyReference.cache
+C:\Users\zhsha\OneDrive\Documents\antra\notes\assignment\Lab5\Exercise3\obj\Debug\netcoreapp3.1\Exercise3.AssemblyInfoInputs.cache
+C:\Users\zhsha\OneDrive\Documents\antra\notes\assignment\Lab5\Exercise3\obj\Debug\netcoreapp3.1\Exercise3.AssemblyInfo.cs
+C:\Users\zhsha\OneDrive\Documents\antra\notes\assignment\Lab5\Exercise3\obj\Debug\netcoreapp3.1\Exercise3.csproj.CoreCompileInputs.cache
+C:\Users\zhsha\OneDrive\Documents\antra\notes\assignment\Lab5\Exercise3\obj\Debug\netcoreapp3.1\Exercise3.dll
+C:\Users\zhsha\OneDrive\Documents\antra\notes\assignment\Lab5\Exercise3\obj\Debug\netcoreapp3.1\Exercise3.pdb
+C:\Users\zhsha\OneDrive\Documents\antra\notes\assignment\Lab5\Exercise3\obj\Debug\netcoreapp3.1\Exercise3.genruntimeconfig.cache

@@ -1,0 +1,12 @@
+C:\Users\zhsha\OneDrive\Documents\antra\notes\assignment\Lab5\Execise1\bin\Debug\netcoreapp3.1\Execise1.exe
+C:\Users\zhsha\OneDrive\Documents\antra\notes\assignment\Lab5\Execise1\bin\Debug\netcoreapp3.1\Execise1.deps.json
+C:\Users\zhsha\OneDrive\Documents\antra\notes\assignment\Lab5\Execise1\bin\Debug\netcoreapp3.1\Execise1.runtimeconfig.json
+C:\Users\zhsha\OneDrive\Documents\antra\notes\assignment\Lab5\Execise1\bin\Debug\netcoreapp3.1\Execise1.runtimeconfig.dev.json
+C:\Users\zhsha\OneDrive\Documents\antra\notes\assignment\Lab5\Execise1\bin\Debug\netcoreapp3.1\Execise1.dll
+C:\Users\zhsha\OneDrive\Documents\antra\notes\assignment\Lab5\Execise1\bin\Debug\netcoreapp3.1\Execise1.pdb
+C:\Users\zhsha\OneDrive\Documents\antra\notes\assignment\Lab5\Execise1\obj\Debug\netcoreapp3.1\Execise1.AssemblyInfoInputs.cache
+C:\Users\zhsha\OneDrive\Documents\antra\notes\assignment\Lab5\Execise1\obj\Debug\netcoreapp3.1\Execise1.AssemblyInfo.cs
+C:\Users\zhsha\OneDrive\Documents\antra\notes\assignment\Lab5\Execise1\obj\Debug\netcoreapp3.1\Execise1.csproj.CoreCompileInputs.cache
+C:\Users\zhsha\OneDrive\Documents\antra\notes\assignment\Lab5\Execise1\obj\Debug\netcoreapp3.1\Execise1.dll
+C:\Users\zhsha\OneDrive\Documents\antra\notes\assignment\Lab5\Execise1\obj\Debug\netcoreapp3.1\Execise1.pdb
+C:\Users\zhsha\OneDrive\Documents\antra\notes\assignment\Lab5\Execise1\obj\Debug\netcoreapp3.1\Execise1.genruntimeconfig.cache
