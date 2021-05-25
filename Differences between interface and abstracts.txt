@@ -1,0 +1,34 @@
+10 differences between interface and abstracts class in C#
+
+1. Multiple inheritance can not be achieved by abstract class.
+    Muitiple inheritance can be achieved by interface class.
+
+2. Abstract class contains both declaration and definition part.
+    Interface class contains only a declaration part.
+
+3. Abstract class contains constructor.
+    Interface class does not contains constructor.
+
+4. Abstract class can contain static members.
+    Interface class does not contain staric members.
+
+5. Abstract class can contain different types of access modifiers like public, private, protect etc.
+    Interface class only contains public access modifier becasue everything in the interface is public.
+
+6. The performance of an abstract class is fast.
+    The performance of interface is slow because it requires time to search actual method in the corresponding class.
+
+7. Abstract class is used to implement the core identity of class.
+    Interface class is used to implement peripheral abilities of class.
+
+8. Abstract class can contain methods, fields, constants, etc.
+    Interface class can only contain methods.
+
+9. Abstract class can be fully, partially or not implemented.
+    Interface class should be fully implemented.
+
+10. A class can only use one abstract class.
+      A class can use multiple interface.
+
+11. If many implementations are of the same kind and use common behavior, then it is superior to use abstract class.
+      If many implementations only share methods, then it is superior to use interface.
