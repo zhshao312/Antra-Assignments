@@ -44,7 +44,6 @@ C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShop.MVC\obj\Debug\net5.0
 C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShop.MVC\obj\Debug\net5.0\MovieShop.MVC.genruntimeconfig.cache
 C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShop.MVC\obj\Debug\net5.0\Razor\Views\Account\Account.cshtml.g.cs
 C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShop.MVC\obj\Debug\net5.0\Razor\Views\Account\PostAccount.cshtml.g.cs
-C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShop.MVC\obj\Debug\net5.0\Razor\Views\Account\PostLogin.cshtml.g.cs
 C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShop.MVC\obj\Debug\net5.0\Razor\Views\Genres\Genres.cshtml.g.cs
 C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShop.MVC\obj\Debug\net5.0\Razor\Views\Movies\Genre.cshtml.g.cs
 C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShop.MVC\obj\Debug\net5.0\Razor\Views\Movies\Movies.cshtml.g.cs
@@ -57,3 +56,4 @@ C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShop.MVC\obj\Debug\net5.0
 C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShop.MVC\obj\Debug\net5.0\Razor\Views\User\Favorites.cshtml.g.cs
 C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShop.MVC\obj\Debug\net5.0\Razor\Views\User\Purchases.cshtml.g.cs
 C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShop.MVC\obj\Debug\net5.0\Razor\Views\User\Reviews.cshtml.g.cs
+C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShop.MVC\obj\Debug\net5.0\Razor\Views\Account\PostAccountLogin.cshtml.g.cs

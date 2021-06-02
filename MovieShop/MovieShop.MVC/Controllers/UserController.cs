@@ -37,30 +37,36 @@ namespace MovieShop.MVC.Controllers
         }
 
         [HttpPost]
-        public void Purchase()
+        public IActionResult PostPurchase()
         {
+            return View("Index");
         }
         [HttpPost]
-        public void Favorite()
+        public IActionResult PostFavorite()
         {
+            return View("Index");
         }
         [HttpPost]
-        public void Unfavorite()
+        public IActionResult PostUnfavorite()
         {
+            return View("Index");
         }
         [HttpPost]
-        public void Review()
+        public IActionResult PostReview()
         {
+            return View("Index");
         }
 
         [HttpPut]
-        public void PutReview()
+        public IActionResult PutReview()
         {
+            return View("Index");
         }
 
         [HttpDelete]
-        public void DeleteReview(int userId, int movieId)
+        public IActionResult DeleteReview(int userId, int movieId)
         {
+            return View("Index");
         }
     }
 

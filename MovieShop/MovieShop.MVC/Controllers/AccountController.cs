@@ -24,15 +24,15 @@ namespace MovieShop.MVC.Controllers
         }
 
         [HttpPost]
-        public void PostAccount()
+        public ActionResult PostAccount()
         {
-           
+            return View("Index");
         }
 
         [HttpPost]
-        public void PostLogin()
+        public ActionResult PostAccountLoginIn()
         {
-
+            return View("Index");
         }
     }
 }

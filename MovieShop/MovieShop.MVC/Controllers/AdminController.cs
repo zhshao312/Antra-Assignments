@@ -16,15 +16,15 @@ namespace MovieShop.MVC.Controllers
         }
 
         [HttpPost]
-        public void PostMovie()
+        public ActionResult PostMovie()
         {
-
+            return View("Index");
         }
 
         [HttpPut]
-        public void PutMovie()
+        public ActionResult PutMovie()
         {
-
+            return View("Index");
         }
     }
 }
