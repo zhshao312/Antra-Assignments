@@ -13,6 +13,7 @@ namespace MovieShop.MVC
     {
         public static void Main(string[] args)
         {
+            //Hosting 
             CreateHostBuilder(args).Build().Run();
         }
 

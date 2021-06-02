@@ -17,12 +17,12 @@ namespace MovieShop.MVC.Controllers
         {
             _logger = logger;
         }
-
+        // localhost/Home/Index
         public IActionResult Index()
         {
             return View();
         }
-
+        // localhost/Home/Privacy
         public IActionResult Privacy()
         {
             return View();
