@@ -6,21 +6,39 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using MovieShop.MVC.Models;
+using ApplicationCore.ServiceInterfaces;
 
 namespace MovieShop.MVC.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        private readonly IMovieService _movieService;
+        
+        //constructor injection
+        public HomeController(IMovieService movieService)
         {
-            _logger = logger;
+            //_movieService = new MovieService();
+
+            //_movieService should have an instance of a class that implements IMovieSerive
+            _movieService = movieService;
         }
         // localhost/Home/Index
         public IActionResult Index()
         {
-            return View();
+            //we need to go to database and display top revenue movie
+            //thin controllers...
+
+            var movies = _movieService.GetTopRevenueMovies();
+            //
+            //send the data to the view so that the view can display the top movies
+            //1. passing the data from my controller to my view using strongly typed Models; *****most prefered way
+            //2. ViewBag
+            //3. ViewData
+
+            ViewBag.MoviesCount = movies.Count;
+            ViewBag.PageTitle = "Top Revenue Movies";
+            ViewData["MyCustomData"] = "Some Information";
+            return View(movies);
         }
         // localhost/Home/Privacy
         public IActionResult Privacy()

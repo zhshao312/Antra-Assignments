@@ -13,3 +13,6 @@ C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\Infrastructure\obj\Debug\net5.
 C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\Infrastructure\obj\Debug\net5.0\Infrastructure.dll
 C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\Infrastructure\obj\Debug\net5.0\ref\Infrastructure.dll
 C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\Infrastructure\obj\Debug\net5.0\Infrastructure.pdb
+C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\Infrastructure\bin\Debug\net5.0\Infrastructure.runtimeconfig.json
+C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\Infrastructure\bin\Debug\net5.0\Infrastructure.runtimeconfig.dev.json
+C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\Infrastructure\obj\Debug\net5.0\Infrastructure.genruntimeconfig.cache

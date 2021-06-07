@@ -2,12 +2,16 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ApplicationCore.ServiceInterfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Infrastructure.Services;
+using Microsoft.EntityFrameworkCore;
+using Infrastructure.Data;
 
 namespace MovieShop.MVC
 {
@@ -24,6 +28,14 @@ namespace MovieShop.MVC
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            //telling oru container what class it needs to injects in the constructor for interface
+            //Registration of serivces for interfaces
+            services.AddScoped<IMovieService, MovieService>();
+            services.AddDbContext<MovieShopDbContext>(options =>
+            {
+                options.UseSqlServer(Configuration.GetConnectionString("MovieShopDbConnection"));
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

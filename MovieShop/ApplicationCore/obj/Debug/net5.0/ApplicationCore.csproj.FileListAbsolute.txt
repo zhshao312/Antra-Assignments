@@ -10,3 +10,6 @@ C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\ApplicationCore\obj\Debug\net5
 C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\ApplicationCore\obj\Debug\net5.0\ApplicationCore.dll
 C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\ApplicationCore\obj\Debug\net5.0\ref\ApplicationCore.dll
 C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\ApplicationCore\obj\Debug\net5.0\ApplicationCore.pdb
+C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\ApplicationCore\bin\Debug\net5.0\ApplicationCore.runtimeconfig.json
+C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\ApplicationCore\bin\Debug\net5.0\ApplicationCore.runtimeconfig.dev.json
+C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\ApplicationCore\obj\Debug\net5.0\ApplicationCore.genruntimeconfig.cache
