@@ -13,8 +13,16 @@ namespace Infrastructure.Data
     {
         public MovieShopDbContext(DbContextOptions<MovieShopDbContext> options) : base(options)
         {
-
         }
+        public DbSet<Genre> Genres { get; set; }
+        public DbSet<Trailer> Trailers { get; set; }
+        public DbSet<Movie> Movies { get; set; }
+        public DbSet<Cast> Casts { get; set; }
+        public DbSet<MovieCast> MovieCasts { get; set; }
+        public DbSet<Purchase> Purchases { get; set; }
+        public DbSet<Review> Reviews { get; set; }
+        public DbSet<Favorite> Favorites { get; set; }
+        public DbSet<User> Users { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -27,26 +35,20 @@ namespace Infrastructure.Data
                     g => g.HasOne<Movie>().WithMany().HasForeignKey("MovieId"));
 
 
-            modelBuilder.Entity<Cast>(ConfigureCast);
-            modelBuilder.Entity<MovieCast>(ConfigureMovieCast);
-            modelBuilder.Entity<Purchase>(ConfigurePurchase);
-
             modelBuilder.Entity<User>().HasMany(u => u.Roles).WithMany(r => r.Users)
                  .UsingEntity<Dictionary<string, object>>("UserRole",
                     u => u.HasOne<Role>().WithMany().HasForeignKey("RoleId"),
                     r => r.HasOne<User>().WithMany().HasForeignKey("UserId"));
 
-            modelBuilder.Entity<Review>(ConfigureReview);
+            modelBuilder.Entity<Cast>(ConfigureCast);
+            modelBuilder.Entity<MovieCast>(ConfigureMovieCast);
+            modelBuilder.Entity<User>(ConfigureUser);
             modelBuilder.Entity<Role>(ConfigureRole);
+            modelBuilder.Entity<Purchase>(ConfigurePurchase);
             modelBuilder.Entity<Favorite>(ConfigureFavorite);
+            modelBuilder.Entity<Review>(ConfigureReview);
 
         }
-        public DbSet<Genre> Genres { get; set; }
-        public DbSet<Trailer> Trailers { get; set; }
-        public DbSet<Movie> Movies { get; set; }
-        public DbSet<Cast> Casts { get; set; }
-        public DbSet<MovieCast> MovieCasts { get; set; }
-        public DbSet<Purchase> Purchases { get; set; }
 
         private void ConfigureTrailer(EntityTypeBuilder<Trailer> builder)
         {
@@ -120,6 +122,19 @@ namespace Infrastructure.Data
             builder.ToTable("Role");
             builder.HasKey(r => r.Id);
             builder.Property(r => r.Name).HasMaxLength(20);
+        }
+        private void ConfigureUser(EntityTypeBuilder<User> builder)
+        {
+            builder.ToTable("User");
+            builder.HasKey(u => u.Id);
+            builder.HasIndex(u => u.Email).IsUnique();
+            builder.Property(u => u.Email).HasMaxLength(256);
+            builder.Property(u => u.FirstName).HasMaxLength(128);
+            builder.Property(u => u.LastName).HasMaxLength(128);
+            builder.Property(u => u.HashedPassword).HasMaxLength(1024);
+            builder.Property(u => u.PhoneNumber).HasMaxLength(16);
+            builder.Property(u => u.Salt).HasMaxLength(1024);
+            builder.Property(u => u.IsLocked).HasDefaultValue(false);
         }
     }
 }

@@ -12,6 +12,8 @@ using Microsoft.Extensions.Hosting;
 using Infrastructure.Services;
 using Microsoft.EntityFrameworkCore;
 using Infrastructure.Data;
+using ApplicationCore.RepositoryInterfaces;
+using Infrastructure.Repositories;
 
 namespace MovieShop.MVC
 {
@@ -31,7 +33,15 @@ namespace MovieShop.MVC
 
             //telling oru container what class it needs to injects in the constructor for interface
             //Registration of serivces for interfaces
+            
             services.AddScoped<IMovieService, MovieService>();
+            services.AddScoped<IMovieRepository, MovieRepository>();
+
+            services.AddScoped<IGenreService, GenreService>();
+            services.AddScoped<IGenreRepository, GenreRepository>();
+
+            services.AddScoped<ICastRepository, CastRepository>();
+
             services.AddDbContext<MovieShopDbContext>(options =>
             {
                 options.UseSqlServer(Configuration.GetConnectionString("MovieShopDbConnection"));

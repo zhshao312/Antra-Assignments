@@ -3,58 +3,85 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ApplicationCore.Entities;
 using ApplicationCore.Models.Response;
+using ApplicationCore.RepositoryInterfaces;
 using ApplicationCore.ServiceInterfaces;
+using AutoMapper;
+
 namespace Infrastructure.Services
 {
     public class MovieService : IMovieService
     {
-        public List<MovieCardResponseModel> GetTopRevenueMovies()
+        private readonly IMovieRepository _movieRepository;
+        private readonly IGenreRepository _genreRepository;
+        private readonly ICastRepository _castRepository;
+
+
+        public MovieService(IMovieRepository movieRepository, IGenreRepository genreRepository, ICastRepository castRepository)
         {
-            // we need to call our repository and get the data from database
+            _movieRepository = movieRepository;
+            _genreRepository = genreRepository;
+            _castRepository = castRepository;
 
-            var movies = new List<MovieCardResponseModel>
+        }
+        public async Task<List<MovieCardResponseModel>> GetTopRevenueMovies()
+        {
+            var movies = await _movieRepository.GetHighestRevenueMovies();
+
+            var MovieCardList = new List<MovieCardResponseModel>();
+            foreach(var movie in movies)
             {
-                new MovieCardResponseModel {Id = 1, Title = "Avengers: Infinity War"},
-                new MovieCardResponseModel {Id = 2, Title = "Avatar"},
-                new MovieCardResponseModel {Id = 3, Title = "Star Wars: The Force Awakens"},
-                new MovieCardResponseModel {Id = 4, Title = "Titanic"},
-                new MovieCardResponseModel {Id = 5, Title = "Inception"},
-                new MovieCardResponseModel {Id = 6, Title = "Avengers: Age of Ultron"},
-                new MovieCardResponseModel {Id = 7, Title = "Interstellar"},
-                new MovieCardResponseModel {Id = 8, Title = "Fight Club"},
-                new MovieCardResponseModel
+                MovieCardList.Add(new MovieCardResponseModel
                 {
-                    Id = 9, Title = "The Lord of the Rings: The Fellowship of the Ring"
-                },
-                new MovieCardResponseModel {Id = 10, Title = "The Dark Knight"},
-                new MovieCardResponseModel {Id = 11, Title = "The Hunger Games"},
-                new MovieCardResponseModel {Id = 12, Title = "Django Unchained"},
-                new MovieCardResponseModel
-                {
-                    Id = 13, Title = "The Lord of the Rings: The Return of the King"
-                },
-                new MovieCardResponseModel
-                    {Id = 14, Title = "Harry Potter and the Philosopher's Stone"},
-                new MovieCardResponseModel {Id = 15, Title = "Iron Man"},
-                new MovieCardResponseModel {Id = 16, Title = "Furious 7"}
-            };
-
-            return movies;
+                    Id = movie.Id,
+                    PosterUrl = movie.PosterUrl,
+                    ReleaseDate = movie.ReleaseDate.GetValueOrDefault(),
+                    Title = movie.Title
+                });
+            }
+            return MovieCardList;
         }
 
-        public MovieDetailsResponseModel GetMovieDetailsById(int id)
+        public async Task<MovieDetailsResponseModel> GetMovieDetailsById(int id)
         {
-            var movieDetails = new MovieDetailsResponseModel
-            {
-                Id = 1,
-                Title = "Avengers: Infinity War",
-                PosterUrl = "",
-                Budget = 1200000,
-                Overview = "Test String"
+            //var movieGenres = await _genreRepository.GetAllGenres();
+
+            var movies = await _movieRepository.GetById(id);
+            //var casts = await _castRepository.GetById(id);
+            
+            //var movieCasts = new CastResponseModel{
+            //    Id = casts.Id,
+            //    Name = casts.Name,
+            //    Gender = casts.Gender,
+            //    TmdbUrl = casts.TmdbUrl,
+            //    ProfilePath = casts.ProfilePath
+            //};
+
+
+            var MovieDetails = new MovieDetailsResponseModel {
+                Id = movies.Id,
+                Title = movies.Title,
+                BackdropUrl = movies.BackdropUrl,
+                PosterUrl = movies.PosterUrl,
+                Tagline = movies.Tagline,
+                Overview = movies.Overview,
+                ImdbUrl = movies.ImdbUrl,
+                TmdbUrl = movies.TmdbUrl,
+                ReleaseDate = movies.ReleaseDate,
+                RunTime = movies.RunTime,
+                Budget = movies.Budget,
+                Price = movies.Price,
+                Revenue = movies.Revenue,
+                Rating = movies.Rating,
+                //Casts.Add(movieCasts);
+
+                //Genres = movieGenres
             };
 
-            return movieDetails;
+
+            return MovieDetails;
+
         }
     }
 

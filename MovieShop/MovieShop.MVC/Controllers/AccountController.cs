@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ApplicationCore.Models.Request;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MovieShop.MVC.Controllers
@@ -11,28 +12,22 @@ namespace MovieShop.MVC.Controllers
     {
         //localhost/Account/id
         [HttpGet]
-        public IActionResult Account(int id)
+        public IActionResult Register()
         {
+            //show view with empty text boxes for name, dob, email, password
+            return View();
+        }
+        [HttpPost]
+        public IActionResult Register(UserRegisterRequestModel model)
+        {
+            //check for model validation on server also
+            if (ModelState.IsValid)
+            {
+                //save to database
+            }
+            //take name, dob, email, password from view to database
             return View();
         }
 
-        //localhost/Account
-        [HttpGet]
-        public IActionResult Account()
-        {
-            return View();
-        }
-
-        [HttpPost]
-        public ActionResult PostAccount()
-        {
-            return View("Index");
-        }
-
-        [HttpPost]
-        public ActionResult PostAccountLoginIn()
-        {
-            return View("Index");
-        }
     }
 }

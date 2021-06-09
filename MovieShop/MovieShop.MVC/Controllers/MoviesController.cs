@@ -16,42 +16,20 @@ namespace MovieShop.MVC.Controllers
             _movieService = service;
         }
 
-        //localhost/movies
-        [HttpGet]
-        public IActionResult Movies()
+        public IActionResult Index()
         {
             return View();
+        }
+        [HttpGet]
+        public async Task<IActionResult> Details(int id)
+        {
+            var movie = await _movieService.GetMovieDetailsById(id);
+            return View(movie);
         }
 
-        //localhost/movies/id
         [HttpGet]
-        public IActionResult Movies(int id)
+        public IActionResult TopRatedMovies()
         {
-            return View();
-        }
-        //localhost/movies/TopRated
-        [HttpGet]
-        public IActionResult TopRated()
-        {
-            return View();
-        }
-        //localhost/movies/TopRevenue
-        [HttpGet]
-        public IActionResult TopRevenue()
-        {
-            return View();
-        }
-        //localhost/movies/genre/genreId
-        [HttpGet]
-        public IActionResult Genre(int id)
-        {
-            return View();
-        }
-        //localhost/movies/id/reviews
-        [HttpGet]
-        public IActionResult Reviews(int id)
-        {
-            var movies = _movieService.GetMovieDetailsById(id);
             return View();
         }
     }
