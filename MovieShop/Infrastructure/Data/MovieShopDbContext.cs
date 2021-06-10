@@ -23,6 +23,7 @@ namespace Infrastructure.Data
         public DbSet<Review> Reviews { get; set; }
         public DbSet<Favorite> Favorites { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<MovieGenre> MovieGenres { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -30,7 +31,7 @@ namespace Infrastructure.Data
             modelBuilder.Entity<Trailer>(ConfigureTrailer);
 
             modelBuilder.Entity<Movie>().HasMany(m => m.Genres).WithMany(g => g.Movies)
-                .UsingEntity<Dictionary<string, object>>("MovieGenre",
+                .UsingEntity<Dictionary<string, object>>("MovieGenres",
                     m => m.HasOne<Genre>().WithMany().HasForeignKey("GenreId"),
                     g => g.HasOne<Movie>().WithMany().HasForeignKey("MovieId"));
 
@@ -47,6 +48,7 @@ namespace Infrastructure.Data
             modelBuilder.Entity<Purchase>(ConfigurePurchase);
             modelBuilder.Entity<Favorite>(ConfigureFavorite);
             modelBuilder.Entity<Review>(ConfigureReview);
+            modelBuilder.Entity<MovieGenre>(ConfigureMovieGenre);
 
         }
 
@@ -91,6 +93,12 @@ namespace Infrastructure.Data
             builder.HasKey(mc => new { mc.CastId, mc.MovieId, mc.Character});
             builder.HasOne(mc => mc.Movie).WithMany(mc => mc.MovieCasts).HasForeignKey(mc => mc.MovieId);
             builder.HasOne(mc => mc.Cast).WithMany(mc => mc.MovieCasts).HasForeignKey(mc => mc.CastId);
+        }
+
+        private void ConfigureMovieGenre(EntityTypeBuilder<MovieGenre> builder)
+        {
+            builder.ToTable("MovieGenre");
+            builder.HasKey(m => new { m.MovieId, m.GenreId });
         }
 
         private void ConfigurePurchase(EntityTypeBuilder<Purchase> builder)

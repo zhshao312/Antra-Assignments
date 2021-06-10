@@ -13,7 +13,6 @@ C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShop.MVC\bin\Debug\net5.0
 C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShop.MVC\bin\Debug\net5.0\Infrastructure.dll
 C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShop.MVC\bin\Debug\net5.0\ApplicationCore.pdb
 C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShop.MVC\bin\Debug\net5.0\Infrastructure.pdb
-C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShop.MVC\obj\Debug\net5.0\MovieShop.MVC.csprojAssemblyReference.cache
 C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShop.MVC\obj\Debug\net5.0\MovieShop.MVC.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShop.MVC\obj\Debug\net5.0\MovieShop.MVC.AssemblyInfoInputs.cache
 C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShop.MVC\obj\Debug\net5.0\MovieShop.MVC.AssemblyInfo.cs
@@ -42,8 +41,6 @@ C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShop.MVC\obj\Debug\net5.0
 C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShop.MVC\obj\Debug\net5.0\ref\MovieShop.MVC.dll
 C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShop.MVC\obj\Debug\net5.0\MovieShop.MVC.pdb
 C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShop.MVC\obj\Debug\net5.0\MovieShop.MVC.genruntimeconfig.cache
-C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShop.MVC\obj\Debug\net5.0\Razor\Views\Account\Account.cshtml.g.cs
-C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShop.MVC\obj\Debug\net5.0\Razor\Views\Account\PostAccount.cshtml.g.cs
 C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShop.MVC\obj\Debug\net5.0\Razor\Views\Genres\Genres.cshtml.g.cs
 C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShop.MVC\obj\Debug\net5.0\Razor\Views\Movies\Genre.cshtml.g.cs
 C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShop.MVC\obj\Debug\net5.0\Razor\Views\Movies\Movies.cshtml.g.cs
@@ -54,7 +51,6 @@ C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShop.MVC\obj\Debug\net5.0
 C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShop.MVC\obj\Debug\net5.0\Razor\Views\User\Favorites.cshtml.g.cs
 C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShop.MVC\obj\Debug\net5.0\Razor\Views\User\Purchases.cshtml.g.cs
 C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShop.MVC\obj\Debug\net5.0\Razor\Views\User\Reviews.cshtml.g.cs
-C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShop.MVC\obj\Debug\net5.0\Razor\Views\Account\PostAccountLogin.cshtml.g.cs
 C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShop.MVC\bin\Debug\net5.0\Humanizer.dll
 C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShop.MVC\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
 C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShop.MVC\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
@@ -165,3 +161,10 @@ C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShop.MVC\bin\Debug\net5.0
 C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShop.MVC\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShop.MVC\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShop.MVC\bin\Debug\net5.0\AutoMapper.dll
+C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShop.MVC\obj\Debug\net5.0\Razor\Views\Movies\TopRated.cshtml.g.cs
+C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShop.MVC\obj\Debug\net5.0\Razor\Views\Movies\TopRevenue.cshtml.g.cs
+C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShop.MVC\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShop.MVC\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShop.MVC\obj\Debug\net5.0\Razor\Views\Account\Login.cshtml.g.cs
+C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShop.MVC\obj\Debug\net5.0\MovieShop.MVC.csproj.AssemblyReference.cache
+C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShop.MVC\obj\Debug\net5.0\Razor\Views\Admin\CreateMovie.cshtml.g.cs

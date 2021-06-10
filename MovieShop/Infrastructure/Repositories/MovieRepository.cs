@@ -32,14 +32,14 @@ namespace Infrastructure.Repositories
             //get genres by joining moviegenrne, genre
             //rating, avg of movieId Review Table
 
-            var movies = await _dbContext.Movies.FirstOrDefaultAsync(m => m.Id == id);
-            
-            var movieRating = await _dbContext.Reviews.Where(r=>r.MovieId == id)
-                                                      .DefaultIfEmpty()
-                                                      .AverageAsync(r => r == null ? 0 : r.Rating);
-            movies.Rating = movieRating; 
+            var movie = await _dbContext.Movies.Include(m => m.MovieGenres).ThenInclude(m => m.Genre).
+                Include(m => m.MovieCasts).ThenInclude(m => m.Cast).
+                FirstOrDefaultAsync(m => m.Id == id);
 
-            return movies;
+            var movieRating = await _dbContext.Reviews.Where(r => r.MovieId == id).DefaultIfEmpty().AverageAsync(r => r == null ? 0 : r.Rating);
+            if (movieRating > 0) movie.Rating = movieRating;
+
+            return movie;
         }
     }
 }

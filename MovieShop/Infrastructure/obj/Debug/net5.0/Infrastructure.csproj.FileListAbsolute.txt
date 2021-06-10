@@ -4,7 +4,6 @@ C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\Infrastructure\bin\Debug\net5.
 C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\Infrastructure\bin\Debug\net5.0\Infrastructure.pdb
 C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\Infrastructure\bin\Debug\net5.0\ApplicationCore.dll
 C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\Infrastructure\bin\Debug\net5.0\ApplicationCore.pdb
-C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\Infrastructure\obj\Debug\net5.0\Infrastructure.csprojAssemblyReference.cache
 C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\Infrastructure\obj\Debug\net5.0\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\Infrastructure\obj\Debug\net5.0\Infrastructure.AssemblyInfoInputs.cache
 C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\Infrastructure\obj\Debug\net5.0\Infrastructure.AssemblyInfo.cs
@@ -16,3 +15,4 @@ C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\Infrastructure\obj\Debug\net5.
 C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\Infrastructure\bin\Debug\net5.0\Infrastructure.runtimeconfig.json
 C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\Infrastructure\bin\Debug\net5.0\Infrastructure.runtimeconfig.dev.json
 C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\Infrastructure\obj\Debug\net5.0\Infrastructure.genruntimeconfig.cache
+C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\Infrastructure\obj\Debug\net5.0\Infrastructure.csproj.AssemblyReference.cache
