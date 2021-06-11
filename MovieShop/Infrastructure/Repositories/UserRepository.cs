@@ -22,5 +22,10 @@ namespace Infrastructure.Repositories
             return user;
         }
 
+        public async Task<User> GetUserById(int id)
+        {
+            var user = await _dbContext.Users.FirstOrDefaultAsync(u => u.Id == id);
+            return user;
+        }
     }
 }

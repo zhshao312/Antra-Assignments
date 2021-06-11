@@ -45,9 +45,11 @@ namespace Infrastructure.Repositories
             return await _dbContext.Set<T>().ToListAsync();
         }
 
-        public Task<T> Update(T entity)
+        public virtual async Task<T> Update(T entity)
         {
-            throw new NotImplementedException();
+            _dbContext.Entry(entity).State = EntityState.Modified;
+            await _dbContext.SaveChangesAsync();
+            return entity;
         }
 
         public async Task<T> Add(T entity)
@@ -61,5 +63,6 @@ namespace Infrastructure.Repositories
         {
             throw new NotImplementedException();
         }
+
     }
 }

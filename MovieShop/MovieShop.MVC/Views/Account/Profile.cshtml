@@ -1,0 +1,55 @@
+﻿@model Infrastructure.Services.CurrentUserService
+@using ApplicationCore.ServiceInterfaces;
+@inject ICurrentUserService _CurrentUserService;
+
+@{
+    ViewData["Title"] = "Profile";
+}
+
+<h1>Profile</h1>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.UserId)
+        </dt>
+        <dd class="col-sm-10">
+            @_CurrentUserService.UserId
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.IsAuthticated)
+        </dt>
+        <dd class="col-sm-10">
+            @_CurrentUserService.IsAuthticated
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+        <dd class="col-sm-10">
+            @_CurrentUserService.Email
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.FullName)
+        </dt>
+        <dd class="col-sm-10">
+            @_CurrentUserService.FullName
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.DateOfBirth)
+        </dt>
+        <dd class="col-sm-10">
+            @_CurrentUserService.DateOfBirth
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.IsAdmin)
+        </dt>
+        <dd class="col-sm-10">
+            @_CurrentUserService.IsAdmin
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="RedirectEdit">Edit</a>  |
+    <a asp-action="RedirectHome">Back to Home</a>
+</div>

@@ -1,0 +1,39 @@
+﻿@using ApplicationCore.ServiceInterfaces;
+@inject ICurrentUserService _CurrentUserService;
+
+
+
+@if (_CurrentUserService.IsAuthticated)
+{
+    // FirstName LastName and Email
+    // dropdown
+    // Show User Full Name along with links for logout and View and Edit Profile
+    // When u click on the logout you need to call a logout method in account controller
+    <div class="dropdown">
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            @_CurrentUserService.FullName
+        </a>
+
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="#">Library</a>
+            <a class="dropdown-item" asp-controller="Account" asp-action="Logout">Log Out</a>
+            <a class="dropdown-item" asp-controller="Account" asp-action="Profile">View Profile</a>
+            <a class="dropdown-item" asp-controller="Account" asp-action="EditProfile">Edit Profile</a>
+        </div>
+    </div>
+
+}
+else
+{
+    <div class="navbar-collapse collapse w-100 order-3">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item pr-4">
+                <a class="btn btn-outline-primary" asp-controller="Account" asp-action="Login">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-outline-primary" asp-controller="Account" asp-action="Register">Register</a>
+            </li>
+        </ul>
+
+    </div>
+}

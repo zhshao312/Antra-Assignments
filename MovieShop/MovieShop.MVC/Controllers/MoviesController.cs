@@ -32,5 +32,9 @@ namespace MovieShop.MVC.Controllers
         {
             return View();
         }
+        public LocalRedirectResult RedirectHome()
+        {
+            return LocalRedirect("~/Home/Index");
+        }
     }
 }

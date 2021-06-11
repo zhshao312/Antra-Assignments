@@ -16,10 +16,38 @@ namespace Infrastructure.Services
     public class UserService : IUserService
     {
         private readonly IUserRepository _userRepository;
+        private readonly ICurrentUserService _currentUserService;
 
-        public UserService(IUserRepository userRepository)
+        public UserService(IUserRepository userRepository, ICurrentUserService currentUserService) 
         {
             _userRepository = userRepository;
+            _currentUserService = currentUserService;
+        }
+
+        public async Task EditUser(UserProfileRequestModel userProfileRequestModel)
+        {
+            //var salt = CreateSalt();
+            //var hashedPassword = CreateHashedPassword(userProfileRequestModel.Password, salt);
+
+            var currentUser = await _userRepository.GetUserbyEmail(_currentUserService.Email);
+
+            var inputUser = new User
+            {
+                FirstName = userProfileRequestModel.FirstName,
+                LastName = userProfileRequestModel.LastName,
+                Email = userProfileRequestModel.Email,
+                DateOfBirth = userProfileRequestModel.DateOfBirth,
+                //Salt = salt,
+                //HashedPassword = hashedPassword
+            };
+
+            currentUser.FirstName = inputUser.FirstName;
+            currentUser.LastName = inputUser.LastName;
+            currentUser.Email = inputUser.Email;
+            currentUser.DateOfBirth = inputUser.DateOfBirth;
+
+            await _userRepository.Update(currentUser);
+             
         }
 
         public async Task<UserRegisterResponseModel> RegisterUser(UserRegisterRequestModel userRegisterRequestModel)
@@ -65,39 +93,36 @@ namespace Infrastructure.Services
             return response;
         }
 
-        public async Task<UserLoginReponseModel> Login(string email, string password)
+        public async Task<UserLoginResponseModel> Login(string email, string password)
         {
+            // go to database and get the user info -- row by email
+            var user = await _userRepository.GetUserbyEmail(email);
+
+            if (user == null)
             {
-                // go to database and get the user info -- row by email
-                var user = await _userRepository.GetUserbyEmail(email);
-
-                if (user == null)
-                {
-                    // return null
-                    return null;
-                }
-
-                // get the password from UI and salt from above step from database and call CreateHashedPassword method
-
-                var hashedPassword = CreateHashedPassword(password, user.Salt);
-
-                if (hashedPassword == user.HashedPassword)
-                {
-                    // user entered correct password
-
-                    var loginResponseModel = new UserLoginReponseModel
-                    {
-                        Id = user.Id,
-                        Email = user.Email,
-                        FirstName = user.FirstName,
-                        LastName = user.LastName
-                    };
-                    return loginResponseModel;
-                }
-
+                // return null
                 return null;
             }
 
+            // get the password from UI and salt from above step from database and call CreateHashedPassword method
+
+            var hashedPassword = CreateHashedPassword(password, user.Salt);
+
+            if (hashedPassword == user.HashedPassword)
+            {
+                // user entered correct password
+
+                var loginResponseModel = new UserLoginResponseModel
+                {
+                    Id = user.Id,
+                    Email = user.Email,
+                    FirstName = user.FirstName,
+                    LastName = user.LastName
+                };
+                return loginResponseModel;
+            }
+
+            return null;
         }
 
         private string CreateSalt()
@@ -120,7 +145,6 @@ namespace Infrastructure.Services
                 numBytesRequested: 256 / 8));
             return hashed;
         }
-
 
     }
 }

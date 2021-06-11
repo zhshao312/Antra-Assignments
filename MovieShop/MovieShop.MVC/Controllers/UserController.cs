@@ -2,72 +2,54 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ApplicationCore.ServiceInterfaces;
+using Infrastructure.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MovieShop.MVC.Controllers
 {
     public class UserController : Controller
     {
-        //localhost/User/id/movie/id/Favorite
-        [HttpGet]
-        public IActionResult Favorite(int userId, int movieId)
+        private readonly ICurrentUserService _currentUserSerivce;
+        
+        public UserController(CurrentUserService currentUserSerivce)
         {
+            _currentUserSerivce = currentUserSerivce;
+        }
+
+        [Authorize]
+        [HttpGet]
+        public async Task<IActionResult> GetUserPurchasesMovies()
+        {
+            var userId = _currentUserSerivce.UserId;
+            //check whether user is loged in and 
+            //if the user is not loged in redirect to login page
+            //make a request to the database and get info from Purchase Table
+            //select * from purchase where userid = @getfromcookie
             return View();
         }
 
-        //localhost/User/id/purchases
-        [HttpGet]
-        public IActionResult Purchases(int id)
+        [Authorize]
+        [HttpPost]
+        public async Task<IActionResult> PurchasesMovies()
         {
+            //get userId from CurrentUser and create a row in Purchase table
             return View();
         }
 
-        //localhost/User/id/Favorites
-        [HttpGet]
-        public IActionResult Favorites(int id)
+        public async Task<IActionResult> ViewProfile()
         {
+            //get userId from CurrentUser and create a row in Purchase table
             return View();
         }
 
-        //localhost/User/id/reviews
-        [HttpGet]
-        public IActionResult reviews(int id)
+        public async Task<IActionResult> EditProfile()
         {
+            //get userId from CurrentUser and create a row in Purchase table
             return View();
         }
 
-        [HttpPost]
-        public IActionResult PostPurchase()
-        {
-            return View("Index");
-        }
-        [HttpPost]
-        public IActionResult PostFavorite()
-        {
-            return View("Index");
-        }
-        [HttpPost]
-        public IActionResult PostUnfavorite()
-        {
-            return View("Index");
-        }
-        [HttpPost]
-        public IActionResult PostReview()
-        {
-            return View("Index");
-        }
-
-        [HttpPut]
-        public IActionResult PutReview()
-        {
-            return View("Index");
-        }
-
-        [HttpDelete]
-        public IActionResult DeleteReview(int userId, int movieId)
-        {
-            return View("Index");
-        }
     }
 
 }
