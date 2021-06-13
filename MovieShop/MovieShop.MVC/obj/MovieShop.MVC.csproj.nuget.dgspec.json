@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\zhsha\\OneDrive\\Documents\\GitHub\\Antra-Assignments\\MovieShop\\MovieShop.MVC\\MovieShop.MVC.csproj": {}
+    "C:\\Users\\zhsha\\OneDrive\\Documents\\antra\\MovieShop\\MovieShop.MVC\\MovieShop.MVC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\zhsha\\OneDrive\\Documents\\GitHub\\Antra-Assignments\\MovieShop\\ApplicationCore\\ApplicationCore.csproj": {
+    "C:\\Users\\zhsha\\OneDrive\\Documents\\antra\\MovieShop\\ApplicationCore\\ApplicationCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zhsha\\OneDrive\\Documents\\GitHub\\Antra-Assignments\\MovieShop\\ApplicationCore\\ApplicationCore.csproj",
+        "projectUniqueName": "C:\\Users\\zhsha\\OneDrive\\Documents\\antra\\MovieShop\\ApplicationCore\\ApplicationCore.csproj",
         "projectName": "ApplicationCore",
-        "projectPath": "C:\\Users\\zhsha\\OneDrive\\Documents\\GitHub\\Antra-Assignments\\MovieShop\\ApplicationCore\\ApplicationCore.csproj",
+        "projectPath": "C:\\Users\\zhsha\\OneDrive\\Documents\\antra\\MovieShop\\ApplicationCore\\ApplicationCore.csproj",
         "packagesPath": "C:\\Users\\zhsha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zhsha\\OneDrive\\Documents\\GitHub\\Antra-Assignments\\MovieShop\\ApplicationCore\\obj\\",
+        "outputPath": "C:\\Users\\zhsha\\OneDrive\\Documents\\antra\\MovieShop\\ApplicationCore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\zhsha\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -88,14 +88,14 @@
         }
       }
     },
-    "C:\\Users\\zhsha\\OneDrive\\Documents\\GitHub\\Antra-Assignments\\MovieShop\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\Users\\zhsha\\OneDrive\\Documents\\antra\\MovieShop\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zhsha\\OneDrive\\Documents\\GitHub\\Antra-Assignments\\MovieShop\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\zhsha\\OneDrive\\Documents\\antra\\MovieShop\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Users\\zhsha\\OneDrive\\Documents\\GitHub\\Antra-Assignments\\MovieShop\\Infrastructure\\Infrastructure.csproj",
+        "projectPath": "C:\\Users\\zhsha\\OneDrive\\Documents\\antra\\MovieShop\\Infrastructure\\Infrastructure.csproj",
         "packagesPath": "C:\\Users\\zhsha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zhsha\\OneDrive\\Documents\\GitHub\\Antra-Assignments\\MovieShop\\Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\zhsha\\OneDrive\\Documents\\antra\\MovieShop\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\zhsha\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -112,8 +112,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\zhsha\\OneDrive\\Documents\\GitHub\\Antra-Assignments\\MovieShop\\ApplicationCore\\ApplicationCore.csproj": {
-                "projectPath": "C:\\Users\\zhsha\\OneDrive\\Documents\\GitHub\\Antra-Assignments\\MovieShop\\ApplicationCore\\ApplicationCore.csproj"
+              "C:\\Users\\zhsha\\OneDrive\\Documents\\antra\\MovieShop\\ApplicationCore\\ApplicationCore.csproj": {
+                "projectPath": "C:\\Users\\zhsha\\OneDrive\\Documents\\antra\\MovieShop\\ApplicationCore\\ApplicationCore.csproj"
               }
             }
           }
@@ -135,6 +135,10 @@
             "Azure.Storage.Blobs": {
               "target": "Package",
               "version": "[12.9.0, )"
+            },
+            "MaxMind.GeoIP2": {
+              "target": "Package",
+              "version": "[4.0.1, )"
             },
             "Microsoft.AspNetCore.Cryptography.KeyDerivation": {
               "target": "Package",
@@ -187,14 +191,14 @@
         }
       }
     },
-    "C:\\Users\\zhsha\\OneDrive\\Documents\\GitHub\\Antra-Assignments\\MovieShop\\MovieShop.MVC\\MovieShop.MVC.csproj": {
+    "C:\\Users\\zhsha\\OneDrive\\Documents\\antra\\MovieShop\\MovieShop.MVC\\MovieShop.MVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zhsha\\OneDrive\\Documents\\GitHub\\Antra-Assignments\\MovieShop\\MovieShop.MVC\\MovieShop.MVC.csproj",
+        "projectUniqueName": "C:\\Users\\zhsha\\OneDrive\\Documents\\antra\\MovieShop\\MovieShop.MVC\\MovieShop.MVC.csproj",
         "projectName": "MovieShop.MVC",
-        "projectPath": "C:\\Users\\zhsha\\OneDrive\\Documents\\GitHub\\Antra-Assignments\\MovieShop\\MovieShop.MVC\\MovieShop.MVC.csproj",
+        "projectPath": "C:\\Users\\zhsha\\OneDrive\\Documents\\antra\\MovieShop\\MovieShop.MVC\\MovieShop.MVC.csproj",
         "packagesPath": "C:\\Users\\zhsha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zhsha\\OneDrive\\Documents\\GitHub\\Antra-Assignments\\MovieShop\\MovieShop.MVC\\obj\\",
+        "outputPath": "C:\\Users\\zhsha\\OneDrive\\Documents\\antra\\MovieShop\\MovieShop.MVC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\zhsha\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -211,11 +215,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\zhsha\\OneDrive\\Documents\\GitHub\\Antra-Assignments\\MovieShop\\ApplicationCore\\ApplicationCore.csproj": {
-                "projectPath": "C:\\Users\\zhsha\\OneDrive\\Documents\\GitHub\\Antra-Assignments\\MovieShop\\ApplicationCore\\ApplicationCore.csproj"
+              "C:\\Users\\zhsha\\OneDrive\\Documents\\antra\\MovieShop\\ApplicationCore\\ApplicationCore.csproj": {
+                "projectPath": "C:\\Users\\zhsha\\OneDrive\\Documents\\antra\\MovieShop\\ApplicationCore\\ApplicationCore.csproj"
               },
-              "C:\\Users\\zhsha\\OneDrive\\Documents\\GitHub\\Antra-Assignments\\MovieShop\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\zhsha\\OneDrive\\Documents\\GitHub\\Antra-Assignments\\MovieShop\\Infrastructure\\Infrastructure.csproj"
+              "C:\\Users\\zhsha\\OneDrive\\Documents\\antra\\MovieShop\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\zhsha\\OneDrive\\Documents\\antra\\MovieShop\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }

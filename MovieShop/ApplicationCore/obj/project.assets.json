@@ -5872,11 +5872,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\zhsha\\OneDrive\\Documents\\GitHub\\Antra-Assignments\\MovieShop\\ApplicationCore\\ApplicationCore.csproj",
+      "projectUniqueName": "C:\\Users\\zhsha\\OneDrive\\Documents\\antra\\MovieShop\\ApplicationCore\\ApplicationCore.csproj",
       "projectName": "ApplicationCore",
-      "projectPath": "C:\\Users\\zhsha\\OneDrive\\Documents\\GitHub\\Antra-Assignments\\MovieShop\\ApplicationCore\\ApplicationCore.csproj",
+      "projectPath": "C:\\Users\\zhsha\\OneDrive\\Documents\\antra\\MovieShop\\ApplicationCore\\ApplicationCore.csproj",
       "packagesPath": "C:\\Users\\zhsha\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\zhsha\\OneDrive\\Documents\\GitHub\\Antra-Assignments\\MovieShop\\ApplicationCore\\obj\\",
+      "outputPath": "C:\\Users\\zhsha\\OneDrive\\Documents\\antra\\MovieShop\\ApplicationCore\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\zhsha\\AppData\\Roaming\\NuGet\\NuGet.Config",

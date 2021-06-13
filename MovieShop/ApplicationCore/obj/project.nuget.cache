@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "D+IpquOlN9LVMt+mxYNSBY1KzhLDdj9YCebfW4XC6AJ8GxA2Zb++6nSsNAmy/+PCYa57OIhB+du7J1D8aBdZ8Q==",
+  "dgSpecHash": "lY/bUPCuVolF0oT/pMZVY9k6Q8JvaRDcuJUW+4YY1O/Q+pwgZdouV5GVD50CvZDbATK4V0pkVW9ZHrPk1MsMpg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\zhsha\\OneDrive\\Documents\\GitHub\\Antra-Assignments\\MovieShop\\ApplicationCore\\ApplicationCore.csproj",
+  "projectFilePath": "C:\\Users\\zhsha\\OneDrive\\Documents\\antra\\MovieShop\\ApplicationCore\\ApplicationCore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\zhsha\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\zhsha\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.7\\microsoft.aspnetcore.http.features.5.0.7.nupkg.sha512",

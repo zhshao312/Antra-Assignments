@@ -15,10 +15,10 @@
         </a>
 
         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <a class="dropdown-item" href="#">Library</a>
+            <a class="dropdown-item" asp-controller="User" asp-action="GetUserPurchasesMovies">Library</a>
             <a class="dropdown-item" asp-controller="Account" asp-action="Logout">Log Out</a>
-            <a class="dropdown-item" asp-controller="Account" asp-action="Profile">View Profile</a>
-            <a class="dropdown-item" asp-controller="Account" asp-action="EditProfile">Edit Profile</a>
+            <a class="dropdown-item" asp-controller="User" asp-action="ViewProfile">View Profile</a>
+            <a class="dropdown-item" asp-controller="User" asp-action="EditProfile">Edit Profile</a>
         </div>
     </div>
 

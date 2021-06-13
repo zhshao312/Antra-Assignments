@@ -16,6 +16,7 @@ using ApplicationCore.RepositoryInterfaces;
 using Infrastructure.Repositories;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using MovieShop.MVC.Middlewares;
 
 namespace MovieShop.MVC
 {
@@ -47,6 +48,8 @@ namespace MovieShop.MVC
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IUserService, UserService>();
 
+            services.AddScoped<IPurchaseRepository, PurchaseRepository>();
+
             services.AddScoped<ICurrentUserService, CurrentUserService>();
 
             services.AddDbContext<MovieShopDbContext>(options =>
@@ -75,7 +78,9 @@ namespace MovieShop.MVC
         {
             if (env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage();
+                //app.UseDeveloperExceptionPage();
+                //app.UseExceptionHandler("/Home/Error");
+                app.UseMovieShopExceptionMiddleware();
             }
             else
             {
@@ -87,10 +92,11 @@ namespace MovieShop.MVC
             app.UseStaticFiles();
 
             app.UseRouting();
-
-            app.UseAuthorization();
+            
             app.UseAuthentication();
+            app.UseAuthorization();
 
+            app.UseLoggerMiddleware();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(

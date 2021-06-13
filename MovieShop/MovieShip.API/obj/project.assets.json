@@ -69,6 +69,29 @@
           "lib/netstandard2.0/Humanizer.dll": {}
         }
       },
+      "MaxMind.Db/3.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/MaxMind.Db.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/MaxMind.Db.dll": {}
+        }
+      },
+      "MaxMind.GeoIP2/4.0.1": {
+        "type": "package",
+        "dependencies": {
+          "MaxMind.Db": "3.0.0",
+          "Microsoft.CSharp": "4.7.0",
+          "Microsoft.Extensions.Options": "5.0.0"
+        },
+        "compile": {
+          "lib/net5.0/MaxMind.GeoIP2.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/MaxMind.GeoIP2.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Cryptography.Internal/5.0.7": {
         "type": "package",
         "compile": {
@@ -1770,6 +1793,7 @@
           "ApplicationCore": "1.0.0",
           "AutoMapper": "10.1.1",
           "Azure.Storage.Blobs": "12.9.0",
+          "MaxMind.GeoIP2": "4.0.1",
           "Microsoft.AspNetCore.Cryptography.KeyDerivation": "5.0.7",
           "Microsoft.EntityFrameworkCore": "5.0.6",
           "Microsoft.EntityFrameworkCore.Relational": "5.0.6",
@@ -1872,6 +1896,45 @@
         "lib/netstandard2.0/Humanizer.dll",
         "lib/netstandard2.0/Humanizer.xml",
         "logo.png"
+      ]
+    },
+    "MaxMind.Db/3.0.0": {
+      "sha512": "fOWdlC6LbGvJnF9IJ5Fl3JeoeQGtzVBOJqDSoU2j01A4/dHurGRrMVN8Qh3Fq7OuMQiaNdY9yWzE72LWW/S6Nw==",
+      "type": "package",
+      "path": "maxmind.db/3.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/MaxMind.Db.dll",
+        "lib/net461/MaxMind.Db.xml",
+        "lib/net5.0/MaxMind.Db.dll",
+        "lib/net5.0/MaxMind.Db.xml",
+        "lib/netstandard2.0/MaxMind.Db.dll",
+        "lib/netstandard2.0/MaxMind.Db.xml",
+        "lib/netstandard2.1/MaxMind.Db.dll",
+        "lib/netstandard2.1/MaxMind.Db.xml",
+        "maxmind.db.3.0.0.nupkg.sha512",
+        "maxmind.db.nuspec"
+      ]
+    },
+    "MaxMind.GeoIP2/4.0.1": {
+      "sha512": "MGA5VPhICGp++vLNq/sk9bnknKOCr1NNfcvl3iqHllGXIr3De2vo7gU25U/9o0puMvsPVZgRhuZp4NQrXKLQ1Q==",
+      "type": "package",
+      "path": "maxmind.geoip2/4.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "MaxMind-logo.png",
+        "lib/net461/MaxMind.GeoIP2.dll",
+        "lib/net461/MaxMind.GeoIP2.xml",
+        "lib/net5.0/MaxMind.GeoIP2.dll",
+        "lib/net5.0/MaxMind.GeoIP2.xml",
+        "lib/netstandard2.0/MaxMind.GeoIP2.dll",
+        "lib/netstandard2.0/MaxMind.GeoIP2.xml",
+        "lib/netstandard2.1/MaxMind.GeoIP2.dll",
+        "lib/netstandard2.1/MaxMind.GeoIP2.xml",
+        "maxmind.geoip2.4.0.1.nupkg.sha512",
+        "maxmind.geoip2.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Cryptography.Internal/5.0.7": {
@@ -6575,11 +6638,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\zhsha\\OneDrive\\Documents\\GitHub\\Antra-Assignments\\MovieShop\\MovieShip.API\\MovieShop.API.csproj",
+      "projectUniqueName": "C:\\Users\\zhsha\\OneDrive\\Documents\\antra\\MovieShop\\MovieShip.API\\MovieShop.API.csproj",
       "projectName": "MovieShop.API",
-      "projectPath": "C:\\Users\\zhsha\\OneDrive\\Documents\\GitHub\\Antra-Assignments\\MovieShop\\MovieShip.API\\MovieShop.API.csproj",
+      "projectPath": "C:\\Users\\zhsha\\OneDrive\\Documents\\antra\\MovieShop\\MovieShip.API\\MovieShop.API.csproj",
       "packagesPath": "C:\\Users\\zhsha\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\zhsha\\OneDrive\\Documents\\GitHub\\Antra-Assignments\\MovieShop\\MovieShip.API\\obj\\",
+      "outputPath": "C:\\Users\\zhsha\\OneDrive\\Documents\\antra\\MovieShop\\MovieShip.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\zhsha\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6596,11 +6659,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\zhsha\\OneDrive\\Documents\\GitHub\\Antra-Assignments\\MovieShop\\ApplicationCore\\ApplicationCore.csproj": {
-              "projectPath": "C:\\Users\\zhsha\\OneDrive\\Documents\\GitHub\\Antra-Assignments\\MovieShop\\ApplicationCore\\ApplicationCore.csproj"
+            "C:\\Users\\zhsha\\OneDrive\\Documents\\antra\\MovieShop\\ApplicationCore\\ApplicationCore.csproj": {
+              "projectPath": "C:\\Users\\zhsha\\OneDrive\\Documents\\antra\\MovieShop\\ApplicationCore\\ApplicationCore.csproj"
             },
-            "C:\\Users\\zhsha\\OneDrive\\Documents\\GitHub\\Antra-Assignments\\MovieShop\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\zhsha\\OneDrive\\Documents\\GitHub\\Antra-Assignments\\MovieShop\\Infrastructure\\Infrastructure.csproj"
+            "C:\\Users\\zhsha\\OneDrive\\Documents\\antra\\MovieShop\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\zhsha\\OneDrive\\Documents\\antra\\MovieShop\\Infrastructure\\Infrastructure.csproj"
             }
           }
         }

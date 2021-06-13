@@ -15,6 +15,9 @@ namespace ApplicationCore.ServiceInterfaces
         Task<UserLoginResponseModel> Login(string email, string password);
 
         Task EditUser(UserProfileRequestModel userProfileRequestModel);
+        Task<List<MovieCardResponseModel>> GetPurchasedMovies(int id);
+        Task PurchaseMovie(PurchaseMovieRequestModel purchaseMovieRequest);
+
 
         //delete
         //editUser

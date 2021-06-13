@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ApplicationCore.Models.Request;
 using ApplicationCore.ServiceInterfaces;
 using Infrastructure.Services;
 using Microsoft.AspNetCore.Authorization;
@@ -12,11 +13,18 @@ namespace MovieShop.MVC.Controllers
     public class UserController : Controller
     {
         private readonly ICurrentUserService _currentUserSerivce;
-        
-        public UserController(CurrentUserService currentUserSerivce)
+        private readonly IUserService _userService;
+        private readonly IMovieService _movieService;
+
+
+
+        public UserController(ICurrentUserService currentUserSerivce, IUserService userService, IMovieService movieService)
         {
             _currentUserSerivce = currentUserSerivce;
+            _userService = userService;
+            _movieService = movieService;
         }
+
 
         [Authorize]
         [HttpGet]
@@ -27,28 +35,58 @@ namespace MovieShop.MVC.Controllers
             //if the user is not loged in redirect to login page
             //make a request to the database and get info from Purchase Table
             //select * from purchase where userid = @getfromcookie
-            return View();
+            var purchaseMovies = await _userService.GetPurchasedMovies(userId);
+            return View(purchaseMovies);
+        }
+
+
+        [HttpGet]
+        public async Task<IActionResult> PurchaseMovie(int id)
+        {
+            var movie = await _movieService.GetMovieDetailsById(id);
+            return View(movie);
         }
 
         [Authorize]
         [HttpPost]
-        public async Task<IActionResult> PurchasesMovies()
+        public async Task<IActionResult> PurchasesMovie(PurchaseMovieRequestModel purchase)
         {
             //get userId from CurrentUser and create a row in Purchase table
+            await _userService.PurchaseMovie(purchase);
+            return LocalRedirect("~/");
+        }
+        
+        [HttpGet]
+        public IActionResult ViewProfile()
+        {
             return View();
         }
 
-        public async Task<IActionResult> ViewProfile()
+        public IActionResult EditProfile()
         {
-            //get userId from CurrentUser and create a row in Purchase table
             return View();
         }
 
-        public async Task<IActionResult> EditProfile()
+        [HttpPost]
+        public async Task<IActionResult> EditProfile(UserProfileRequestModel model)
         {
-            //get userId from CurrentUser and create a row in Purchase table
-            return View();
+            if (ModelState.IsValid)
+            {
+                await _userService.EditUser(model);
+            }
+            return LocalRedirect("~/");
         }
+
+        public LocalRedirectResult RedirectHome()
+        {
+            return LocalRedirect("~/Home/Index");
+        }
+
+        public LocalRedirectResult RedirectEdit()
+        {
+            return LocalRedirect("~/User/EditProfile");
+        }
+
 
     }
 

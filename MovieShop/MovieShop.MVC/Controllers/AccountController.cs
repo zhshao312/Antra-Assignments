@@ -26,28 +26,6 @@ namespace MovieShop.MVC.Controllers
 
 
         [HttpGet]
-
-        public IActionResult Profile()
-        {
-            return View();
-        }
-
-        public IActionResult EditProfile()
-        {
-            return View();
-        }
-
-        [HttpPost]
-        public async Task<IActionResult> EditProfile(UserProfileRequestModel model)
-        {
-            if (ModelState.IsValid)
-            {
-                await _userService.EditUser(model);
-            }
-            return LocalRedirect("~/");
-        }
-
-        [HttpGet]
         public IActionResult Register()
         {
             // show a view with empty text boxes for name, dob, email. password
@@ -65,7 +43,7 @@ namespace MovieShop.MVC.Controllers
                 // redirect to Login 
             }
             // take name, dob, email, password from view and save it to database
-            return View();
+            return RedirectToAction("Login");
         }
 
         public async Task<IActionResult> Login()
@@ -123,14 +101,6 @@ namespace MovieShop.MVC.Controllers
             return RedirectToAction("Login");
         }
 
-        public LocalRedirectResult RedirectHome()
-        {
-            return LocalRedirect("~/Home/Index");
-        }
 
-        public LocalRedirectResult RedirectEdit()
-        {
-            return LocalRedirect("~/Account/EditProfile");
-        }
     }
 }

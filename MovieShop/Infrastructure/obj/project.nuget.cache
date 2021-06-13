@@ -1,14 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "EVmKUkQDCzOILtee3+vYqntk3whGR2b+MOTs80F+TVrZyA6+eALZRglMcQdbpXDMdmsLv5f8JnRr+njun0Q1iA==",
+  "dgSpecHash": "JcvxGoDgECY9QmTLZUp7VhsRcxJidmmk0FdH+D7k02kqAaAPtmNzLa7m+7CrNP9PCn+tH/cmqU2uKiIIRYu61Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\zhsha\\OneDrive\\Documents\\GitHub\\Antra-Assignments\\MovieShop\\Infrastructure\\Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\zhsha\\OneDrive\\Documents\\antra\\MovieShop\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\zhsha\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\zhsha\\.nuget\\packages\\azure.core\\1.15.0\\azure.core.1.15.0.nupkg.sha512",
     "C:\\Users\\zhsha\\.nuget\\packages\\azure.storage.blobs\\12.9.0\\azure.storage.blobs.12.9.0.nupkg.sha512",
     "C:\\Users\\zhsha\\.nuget\\packages\\azure.storage.common\\12.8.0\\azure.storage.common.12.8.0.nupkg.sha512",
     "C:\\Users\\zhsha\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\zhsha\\.nuget\\packages\\maxmind.db\\3.0.0\\maxmind.db.3.0.0.nupkg.sha512",
+    "C:\\Users\\zhsha\\.nuget\\packages\\maxmind.geoip2\\4.0.1\\maxmind.geoip2.4.0.1.nupkg.sha512",
     "C:\\Users\\zhsha\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.7\\microsoft.aspnetcore.cryptography.internal.5.0.7.nupkg.sha512",
     "C:\\Users\\zhsha\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\5.0.7\\microsoft.aspnetcore.cryptography.keyderivation.5.0.7.nupkg.sha512",
     "C:\\Users\\zhsha\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.7\\microsoft.aspnetcore.http.features.5.0.7.nupkg.sha512",
