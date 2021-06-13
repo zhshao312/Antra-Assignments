@@ -36,19 +36,20 @@ namespace Infrastructure.Services
         {
             if (_currentUserService.UserId != purchaseMovieRequest.UserId)
                 throw new HttpException(HttpStatusCode.Unauthorized, "You are not Authorized to purchase");
-            
+
             purchaseMovieRequest.UserId = _currentUserService.UserId;
             // See if Movie is already purchased.
             if (await IsMoviePurchased(purchaseMovieRequest))
                 throw new ConflictException("Movie already Purchased");
             // Get Movie Price from Movie Table
             var movie = await _movieService.GetMovieDetailsById(purchaseMovieRequest.MovieId);
-            purchaseMovieRequest.TotalPrice = movie.Price;
+            
 
             var purchase = new Purchase
             {
                 UserId = _currentUserService.UserId,
                 PurchaseNumber = (Guid)purchaseMovieRequest.PurchaseNumber,
+                TotalPrice = (decimal)movie.Price,
                 PurchaseDateTime = (DateTime)purchaseMovieRequest.PurchaseDateTime,
                 MovieId = purchaseMovieRequest.MovieId
             };

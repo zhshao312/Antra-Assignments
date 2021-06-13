@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using ApplicationCore.Models.Request;
+using ApplicationCore.Models.Response;
 using ApplicationCore.ServiceInterfaces;
 using Infrastructure.Services;
 using Microsoft.AspNetCore.Authorization;
@@ -43,19 +44,19 @@ namespace MovieShop.MVC.Controllers
         [HttpGet]
         public async Task<IActionResult> PurchaseMovie(int id)
         {
-            var movie = await _movieService.GetMovieDetailsById(id);
-            return View(movie);
+            ViewBag.movie  = await _movieService.GetMovieDetailsById(id);
+            
+            return View();
         }
 
         [Authorize]
         [HttpPost]
-        public async Task<IActionResult> PurchasesMovie(PurchaseMovieRequestModel purchase)
+        public async Task<IActionResult> PurchasesMovieAction(PurchaseMovieRequestModel purchase)
         {
             //get userId from CurrentUser and create a row in Purchase table
             await _userService.PurchaseMovie(purchase);
             return LocalRedirect("~/");
         }
-        
         [HttpGet]
         public IActionResult ViewProfile()
         {
@@ -74,7 +75,7 @@ namespace MovieShop.MVC.Controllers
             {
                 await _userService.EditUser(model);
             }
-            return LocalRedirect("~/");
+            return LocalRedirect("~/Account/Login");
         }
 
         public LocalRedirectResult RedirectHome()

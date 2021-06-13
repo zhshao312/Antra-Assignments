@@ -53,7 +53,7 @@ namespace MovieShop.MVC.Middlewares
                     break;
                 case Exception exception:
                     httpContext.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
-                    break;
+                    break;               
             }
 
             var errorResponse = new
