@@ -50,7 +50,6 @@ C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShip.API\bin\Debug\net5.0
 C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShip.API\bin\Debug\net5.0\Infrastructure.dll
 C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShip.API\bin\Debug\net5.0\ApplicationCore.pdb
 C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShip.API\bin\Debug\net5.0\Infrastructure.pdb
-C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShip.API\obj\Debug\net5.0\MovieShop.API.csprojAssemblyReference.cache
 C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShip.API\obj\Debug\net5.0\MovieShop.API.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShip.API\obj\Debug\net5.0\MovieShop.API.AssemblyInfoInputs.cache
 C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShip.API\obj\Debug\net5.0\MovieShop.API.AssemblyInfo.cs
@@ -66,3 +65,14 @@ C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShip.API\obj\Debug\net5.0
 C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShip.API\obj\Debug\net5.0\ref\MovieShop.API.dll
 C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShip.API\obj\Debug\net5.0\MovieShop.API.pdb
 C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShip.API\obj\Debug\net5.0\MovieShop.API.genruntimeconfig.cache
+C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShip.API\bin\Debug\net5.0\Azure.Core.dll
+C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShip.API\bin\Debug\net5.0\Azure.Storage.Blobs.dll
+C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShip.API\bin\Debug\net5.0\Azure.Storage.Common.dll
+C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShip.API\bin\Debug\net5.0\MaxMind.Db.dll
+C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShip.API\bin\Debug\net5.0\MaxMind.GeoIP2.dll
+C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShip.API\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShip.API\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShip.API\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShip.API\bin\Debug\net5.0\System.IO.Pipelines.dll
+C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShip.API\bin\Debug\net5.0\System.Memory.Data.dll
+C:\Users\zhsha\OneDrive\Documents\antra\MovieShop\MovieShip.API\obj\Debug\net5.0\MovieShop.API.csproj.AssemblyReference.cache

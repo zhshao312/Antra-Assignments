@@ -13,8 +13,9 @@ namespace ApplicationCore.ServiceInterfaces
         //method for getting top 30 heightest revenue movies
         Task<List<MovieCardResponseModel>> GetTopRevenueMovies();
         Task<MovieDetailsResponseModel> GetMovieDetailsById(int id);
-
         Task<MovieDetailsResponseModel> CreateMovie(CreateMovieRequestModel createMovieRequest);
+        Task<List<MovieCardResponseModel>> GetMoviesByGenreId(int genreId);
+        Task<List<MovieCardResponseModel>> GetAllMovies();
 
     }
 }

@@ -32,6 +32,21 @@ namespace Infrastructure.Services
             _purchaseRepository = purchaseRepository;
             _movieService = movieService;
         }
+        public async Task<UserProfileResponseModel> GetUserDetails(int id)
+        {
+            var user = await _userRepository.GetById(id);
+            if (user == null) throw new NotFoundException("User", id);
+
+            var userDetails = new UserProfileResponseModel
+            {
+                FirstName = user.FirstName,
+                LastName = user.LastName,
+                Email = user.Email,
+                DateOfBirth = user.DateOfBirth
+            };
+            return userDetails;
+             
+        }
         public async Task PurchaseMovie(PurchaseMovieRequestModel purchaseMovieRequest)
         {
             if (_currentUserService.UserId != purchaseMovieRequest.UserId)
@@ -43,7 +58,6 @@ namespace Infrastructure.Services
                 throw new ConflictException("Movie already Purchased");
             // Get Movie Price from Movie Table
             var movie = await _movieService.GetMovieDetailsById(purchaseMovieRequest.MovieId);
-            
 
             var purchase = new Purchase
             {
@@ -64,11 +78,6 @@ namespace Infrastructure.Services
         }
         public async Task<List<MovieCardResponseModel>> GetPurchasedMovies(int id)
         {
-            //var user = await _userRepository.GetById(id);
-            //if(user.Id ! == _currentUserService.UserId)
-            //{
-            //    return null;
-            //}
 
             var purchasedMovies = await _purchaseRepository.GetUserPurchases(id);
 

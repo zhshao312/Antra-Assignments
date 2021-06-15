@@ -12,5 +12,9 @@ namespace ApplicationCore.Exceptions
         {
 
         }
+        public NotFoundException(string name, object key)
+        : base($"Resource \"{name}\" ({key}) was not found.")
+        {
+        }
     }
 }

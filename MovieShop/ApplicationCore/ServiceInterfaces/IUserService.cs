@@ -17,7 +17,7 @@ namespace ApplicationCore.ServiceInterfaces
         Task EditUser(UserProfileRequestModel userProfileRequestModel);
         Task<List<MovieCardResponseModel>> GetPurchasedMovies(int id);
         Task PurchaseMovie(PurchaseMovieRequestModel purchaseMovieRequest);
-
+        Task<UserProfileResponseModel> GetUserDetails(int id);
 
         //delete
         //editUser

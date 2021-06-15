@@ -58,8 +58,9 @@ namespace MovieShop.MVC.Controllers
             return LocalRedirect("~/");
         }
         [HttpGet]
-        public IActionResult ViewProfile()
+        public async Task<ActionResult> ViewProfile(int id)
         {
+            ViewBag.user = await _userService.GetUserDetails(id);
             return View();
         }
 

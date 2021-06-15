@@ -39,7 +39,7 @@ namespace Infrastructure.Services
         public string LastName => _httpContextAccessor.HttpContext?.User.Claims
                                       .FirstOrDefault(c => c.Type == ClaimTypes.Surname)?.Value;
 
-        public DateTime DateOfBirth => DateTime.Parse(_httpContextAccessor.HttpContext?.User.FindFirst(ClaimTypes.DateOfBirth)?.Value);
+        public DateTime DateOfBirth => Convert.ToDateTime(_httpContextAccessor.HttpContext?.User.FindFirst(ClaimTypes.DateOfBirth)?.Value);
 
         public bool IsAdmin { get; }
         public IEnumerable<string> Roles { get; }
