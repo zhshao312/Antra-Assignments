@@ -15,7 +15,7 @@ namespace ApplicationCore.Entities
         public string Designation { get; set; }
         public string HashedPassword { get; set; }
         public string Salt { get; set; }
-        public ICollection<Interactions> interactions { get; set; }
+        //public ICollection<Interactions> Interactions { get; set; }
 
 
     }

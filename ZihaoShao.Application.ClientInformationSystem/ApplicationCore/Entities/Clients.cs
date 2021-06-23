@@ -17,7 +17,7 @@ namespace ApplicationCore.Entities
         public DateTime? AddedOn { get; set; }
         public int? AddedBy { get; set; }
         public Employees Employees { get; set; }
-        public ICollection<Interactions> interactions { get; set; }
+        //public ICollection<Interactions> Interactions { get; set; }
 
     }
 }
